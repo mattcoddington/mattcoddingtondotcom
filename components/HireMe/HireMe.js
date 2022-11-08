@@ -35,7 +35,7 @@ const HireMe = () => (
   <Container>
     <InnerContainer>
       <Copy>I'm looking for a new gig, freelance or full time!</Copy>
-      <Button text="Hire me, why don't ya" />
+      <Button text="Hire me, why don't ya" primary />
     </InnerContainer>
   </Container>
 );

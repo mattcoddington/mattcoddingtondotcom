@@ -20,6 +20,9 @@ const PrimaryButton = styled.button`
   text-align: center;
 `;
 
-const Button = ({ text = "Button!" }) => <PrimaryButton>{text}</PrimaryButton>;
+const Button = ({ text, primary }) =>
+  primary ? <PrimaryButton>{text}</PrimaryButton> : <button>{text}</button>;
+
+Button.defaultProps = { text: "Button!", primary: true };
 
 export default Button;
