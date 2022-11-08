@@ -3,9 +3,8 @@ import styled from "styled-components";
 import Button from "../Button";
 
 const Container = styled.div`
-  overflow: hidden;
   height: 350px;
-  width: 100vw;
+  width: 101vw;
   margin-left: -44px;
   margin-top: 44px;
   background: #7e6cb2;
