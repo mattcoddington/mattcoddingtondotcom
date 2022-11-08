@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import MainTitle from "../components/MainTitle";
 import HireMe from "../components/HireMe";
+import SectionTitle from "../components/SectionTitle";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
 
       <MainTitle />
       <HireMe />
+      <SectionTitle>Recent Work</SectionTitle>
 
       <footer>
         <a
