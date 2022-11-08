@@ -3,6 +3,7 @@ import styled from "styled-components";
 const Heading = styled.h2`
   text-align: center;
   margin-top: 104px;
+  margin-bottom: 164px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -13,7 +14,7 @@ const Heading = styled.h2`
 
 const SectionTitle = ({ children }) => <Heading>{children}</Heading>;
 
-const defaultProps = {
+SectionTitle.defaultProps = {
   children: "Section Title",
 };
 
