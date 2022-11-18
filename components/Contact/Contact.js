@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-import ContactInfo from "../ContactInfo";
+import ContactInfo from "./ContactInfo";
+import ContactForm from "./ContactForm";
 
 const Container = styled.div`
   display: flex;
@@ -16,18 +17,22 @@ const FormContainer = styled.div`
   box-shadow: 0px 1px 24px rgba(0, 0, 0, 0.25);
 `;
 
+const FormHeadline = styled.h3`
+  padding: 0px;
+  margin: 0px 0px 64px 0px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #ffffff;
+`;
+
 const Contact = () => (
   <Container>
     <FormContainer>
-      Drop me a line
-      <br />
-      <input />
-      <br />
-      <input />
-      <br />
-      <textarea />
-      <br />
-      <button>Send message </button>
+      <FormHeadline>Drop me a line</FormHeadline>
+      <ContactForm />
     </FormContainer>
     <ContactInfo />
   </Container>

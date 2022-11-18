@@ -1,5 +1,5 @@
 import SectionTitle from "../SectionTitle";
-import ProjectSnippet from "../ProjectSnippet";
+import ProjectSnippet from "./ProjectSnippet";
 
 const projects = [
   {
