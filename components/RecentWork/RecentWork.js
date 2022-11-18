@@ -43,10 +43,6 @@ const RecentWork = () => (
     {projects.map((items, idx) => (
       <ProjectSnippet key={idx} {...items} />
     ))}
-    <br />
-    <br />
-    <br />
-    <br />
   </>
 );
 
