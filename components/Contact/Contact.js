@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ContactInfo from "./ContactInfo";
 import ContactForm from "./ContactForm";
 
-const Container = styled.div`
+const Container = styled.section`
   display: flex;
   padding: 130px;
   background: #181723;
