@@ -1,26 +1,24 @@
 import styled from "styled-components";
 
-import Header from "../Header";
 import MyIntro from "./MyIntro";
 
-const Container = styled.div`
-  background: #fee9e8;
-`;
-
-const IntroContainer = styled.section`
-  margin-top: -60px;
+const Container = styled.section`
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: url("images/main-title-bg.svg"), #1e1345;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 const MainTitle = () => (
   <Container>
-    <Header />
-    <IntroContainer>
-      <MyIntro />
-    </IntroContainer>
+    <MyIntro />
   </Container>
 );
 

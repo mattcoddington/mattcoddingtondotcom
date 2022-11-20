@@ -30,7 +30,7 @@ const NamePitchContainer = styled.div`
 const Divider = styled.div`
   width: 64px;
   height: 0px;
-  border: 1px solid rgba(28, 21, 37, 0.2);
+  border: 1px solid #332e69;
   transform: rotate(90deg);
 `;
 
@@ -41,7 +41,7 @@ const MyName = styled.div`
   font-weight: 700;
   font-size: 60px;
   line-height: 75px;
-  color: #1c1525;
+  color: #fff;
 `;
 
 const ElevatorPitch = styled.div`
@@ -50,7 +50,7 @@ const ElevatorPitch = styled.div`
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  color: #50475b;
+  color: #c7baed;
 `;
 
 const MyIntro = () => (

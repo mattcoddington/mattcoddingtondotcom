@@ -1,5 +1,6 @@
 import Head from "next/head";
 
+import Header from "../components/Header";
 import MainTitle from "../components/MainTitle";
 import HireMe from "../components/HireMe";
 import RecentWork from "../components/RecentWork";
@@ -14,6 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header />
       <MainTitle />
       <HireMe />
       <RecentWork />

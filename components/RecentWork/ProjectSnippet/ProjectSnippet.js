@@ -1,5 +1,7 @@
 import styled from "styled-components";
+
 import Image from "next/image";
+import Link from "next/link";
 
 const Container = styled.div`
   height: 488px;
@@ -51,24 +53,27 @@ const ProjectSnippet = ({
   imgURL,
   projectTitle,
   projectRole,
+  projectURL,
   hrColor,
   textColor,
 }) => (
-  <Container>
-    <Image
-      src={`/images/${imgURL}`}
-      alt={projectTitle}
-      width={488}
-      height={488}
-    />
-    <ContentContainer backgroundColor={backgroundColor}>
-      <ProjectTitle>{projectTitle}</ProjectTitle>
-      <Role textColor={textColor}>{projectRole}</Role>
-      <HR hrColor={hrColor} />
-      <div>Summary content~!</div>
-      <div>View Project Button!</div>
-    </ContentContainer>
-  </Container>
+  <Link href={`projects/${projectURL}`}>
+    <Container>
+      <Image
+        src={`/images/${imgURL}`}
+        alt={projectTitle}
+        width={488}
+        height={488}
+      />
+      <ContentContainer backgroundColor={backgroundColor}>
+        <ProjectTitle>{projectTitle}</ProjectTitle>
+        <Role textColor={textColor}>{projectRole}</Role>
+        <HR hrColor={hrColor} />
+        <div>Summary content~!</div>
+        <div>View Project Button!</div>
+      </ContentContainer>
+    </Container>
+  </Link>
 );
 
 ProjectSnippet.defaultProps = {
@@ -76,6 +81,7 @@ ProjectSnippet.defaultProps = {
   imgURL: "project_doxy-me-analytics_thumb.png",
   projectTitle: "Project Title",
   projectRole: "Project Role",
+  projectURL: "deal-driver",
   hrColor: "#fff",
   textColor: "#fff",
 };

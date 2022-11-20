@@ -4,11 +4,7 @@ import Button from "../Button";
 
 const Container = styled.div`
   height: 350px;
-  width: 101vw;
-  margin-left: -44px;
-  margin-top: 44px;
   background: #7e6cb2;
-  transform: rotate(-2deg);
 `;
 
 const InnerContainer = styled.div`
@@ -18,7 +14,6 @@ const InnerContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: rotate(2deg);
 `;
 
 const Copy = styled.p`

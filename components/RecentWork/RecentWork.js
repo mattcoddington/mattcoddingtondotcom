@@ -14,6 +14,7 @@ const projects = [
     backgroundColor: "#620206",
     projectTitle: "Deal Driver",
     projectRole: "Contract UX/UI Designer",
+    projectURL: "deal-driver",
     imgURL: "project_deal-driver_thumb.png",
     hrColor: "#751D20",
     textColor: "#C9989A",
