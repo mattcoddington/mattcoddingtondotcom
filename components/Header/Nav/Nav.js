@@ -10,7 +10,7 @@ const Container = styled.div`
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
-  color: ${(props) => (props.sticky ? `#1C1525` : `#c7baed`)};
+  color: ${(props) => (props.separated ? `#1C1525` : `#c7baed`)};
 
   > * {
     padding-right: 24px;
@@ -23,8 +23,8 @@ const Container = styled.div`
 
 const Dot = styled.img``;
 
-const Nav = ({ sticky }) => (
-  <Container sticky={sticky}>
+const Nav = ({ separated }) => (
+  <Container separated={separated}>
     <div>work</div>
     <Dot src="/images/nav-dot.svg" alt="dot" />
     <div>contact</div>

@@ -48,6 +48,18 @@ const HR = styled.hr`
   border: 1px solid ${(props) => props.hrColor};
 `;
 
+const SummaryContainer = styled.div`
+  padding-top: 32px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+const Summary = styled.div`
+  color: ${(props) => props.textColor};
+`;
+
 const ProjectSnippet = ({
   backgroundColor,
   imgURL,
@@ -69,8 +81,21 @@ const ProjectSnippet = ({
         <ProjectTitle>{projectTitle}</ProjectTitle>
         <Role textColor={textColor}>{projectRole}</Role>
         <HR hrColor={hrColor} />
-        <div>Summary content~!</div>
-        <div>View Project Button!</div>
+        <SummaryContainer>
+          <Summary textColor={textColor}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+            <br />
+            <br />
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </Summary>
+          <div>View Project Button!</div>
+        </SummaryContainer>
       </ContentContainer>
     </Container>
   </Link>

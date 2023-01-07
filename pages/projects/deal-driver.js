@@ -13,7 +13,7 @@ export default function TestPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header sticky />
+      <Header separated />
       <Project image={`projects/deal-driver/project-title.svg`} />
 
       <Contact />
