@@ -3,14 +3,10 @@ import styled from "styled-components";
 import ProjectTitle from "./ProjectTitle";
 import ProjectSection from "./ProjectSection";
 
-const Project = ({ image }) => (
+const Project = ({ image, content }) => (
   <div>
     <ProjectTitle image={image} />
-    <ProjectSection heading />
-    <ProjectSection />
-    <ProjectSection />
-    <ProjectSection />
-    <ProjectSection />
+    <ProjectSection content={content} />
   </div>
 );
 

@@ -32,20 +32,19 @@ const HeadingSubtext = styled.p`
   color: #8c8c8c;
 `;
 
-const projectHeading = (
-  <div>
+const ProjectAside = ({ sectionTitle, sectionSubTitle }) => (
+  <Container>
     <HeadingText>
-      Deal Driver<HeadingPeriod>.</HeadingPeriod>
-      <HeadingSubtext>
-        Guidelines for a low-tech, energy efficient, and environmentally
-        sustainable internet
-      </HeadingSubtext>
+      {sectionTitle}
+      <HeadingPeriod>.</HeadingPeriod>
+      <HeadingSubtext>{sectionSubTitle}</HeadingSubtext>
     </HeadingText>
-  </div>
+  </Container>
 );
 
-const ProjectAside = ({ heading }) => (
-  <Container>{heading ? projectHeading : <div>Sup bitches!</div>}</Container>
-);
+ProjectAside.defaultProps = {
+  sectionTitle: "Default Title",
+  sectionSubTitle: "Default Sub Title",
+};
 
 export default ProjectAside;
