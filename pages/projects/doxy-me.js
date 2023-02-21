@@ -271,7 +271,11 @@ export default function DoxyMe() {
       </Head>
 
       <Header separated />
-      <Project image={`projects/doxy-me/project-title.png`} content={content} />
+      <Project
+        image={`projects/doxy-me/project-title.png`}
+        content={content}
+        backgroundColor="#0F1821"
+      />
 
       <Contact />
     </>

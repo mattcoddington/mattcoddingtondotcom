@@ -184,6 +184,7 @@ export default function CorsairLite() {
       <Project
         image={`projects/corsair-lite/project-title.svg`}
         content={content}
+        backgroundColor="#032B57"
       />
 
       <Contact />

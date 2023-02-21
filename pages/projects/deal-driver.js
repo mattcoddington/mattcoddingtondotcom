@@ -259,6 +259,7 @@ export default function DealDriver() {
       <Project
         image={`projects/deal-driver/project-title.svg`}
         content={content}
+        backgroundColor="#F5F5F5"
       />
 
       <Contact />

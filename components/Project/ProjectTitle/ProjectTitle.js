@@ -6,12 +6,16 @@ const Container = styled.section`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url(${(props) => props.image}), #1e1345;
+  background: url(${(props) => props.image}),
+    ${(props) => props.backgroundColor};
   background-size: cover;
 `;
 
-const ProjectTitle = ({ image }) => (
-  <Container image={`../../images/${image}`} />
+const ProjectTitle = ({ backgroundColor, image }) => (
+  <Container
+    backgroundColor={backgroundColor}
+    image={`../../images/${image}`}
+  />
 );
 
 export default ProjectTitle;
