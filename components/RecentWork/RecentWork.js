@@ -13,8 +13,10 @@ const projects = [
   {
     backgroundColor: "#620206",
     projectTitle: "Deal Driver",
-    projectRole: "Contract UX/UI Designer",
+    projectRole: "Freelance Product Designer",
     projectURL: "deal-driver",
+    projectDescription:
+      "A simple web app for keeping sales meetings on track. Create deals, assign actions, hold timeboxed meetings, and process results with in-depth analytics.",
     imgURL: "project_deal-driver_thumb.png",
     hrColor: "#751D20",
     textColor: "#C9989A",

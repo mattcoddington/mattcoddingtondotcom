@@ -24,6 +24,7 @@ const HeadingSubtext = styled.p`
   padding: 0;
   margin: 0;
   margin-top: 32px;
+  width: 270px;
   font-family: "Roboto";
   font-style: italic;
   font-weight: 500;
@@ -32,17 +33,37 @@ const HeadingSubtext = styled.p`
   color: #8c8c8c;
 `;
 
-const ProjectAside = ({ sectionTitle, sectionSubTitle }) => (
-  <Container>
+const RegularText = styled.p`
+  padding: 0;
+  margin: 0;
+  width: 270px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 56px;
+  color: #ffffff;
+`;
+
+const asideType = (heading, sectionTitle) =>
+  heading ? (
     <HeadingText>
       {sectionTitle}
       <HeadingPeriod>.</HeadingPeriod>
-      <HeadingSubtext>{sectionSubTitle}</HeadingSubtext>
     </HeadingText>
+  ) : (
+    <RegularText>{sectionTitle}</RegularText>
+  );
+
+const ProjectAside = ({ heading, sectionTitle, sectionSubTitle }) => (
+  <Container>
+    {asideType(heading, sectionTitle)}
+    <HeadingSubtext>{sectionSubTitle}</HeadingSubtext>
   </Container>
 );
 
 ProjectAside.defaultProps = {
+  heading: false,
   sectionTitle: "Default Title",
   sectionSubTitle: "Default Sub Title",
 };

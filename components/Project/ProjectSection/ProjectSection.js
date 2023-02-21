@@ -2,8 +2,15 @@ import styled from "styled-components";
 
 import ProjectAside from "./ProjectAside";
 
+const OuterContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ${(section) => section && section.sectionBackground}
+`;
+
 const Container = styled.section`
-  margin: 110px auto 142px auto;
+  margin: 72px auto 72px auto;
   max-width: 1200px;
   display: flex;
 `;
@@ -14,23 +21,31 @@ const ContentContainer = styled.div`
   font-weight: 400;
   font-size: 22px;
   line-height: 40px;
-  color: #dcdcdc;
+  color: #c2c2c2;
   p {
     margin-top: 0px;
+  }
+  strong {
+    color: #fff;
   }
 `;
 
 const ProjectSection = ({ content }) =>
   content.map((section, idx) => (
-    <Container key={idx}>
-      <ProjectAside {...section} />
-      <ContentContainer>{section.sectionContent}</ContentContainer>
-    </Container>
+    <OuterContainer {...section} key={idx}>
+      <Container>
+        {console.log("background: ", section.sectionBackground)}
+        {section.aside && <ProjectAside heading={idx === 0} {...section} />}
+        <ContentContainer>{section.sectionContent}</ContentContainer>
+      </Container>
+    </OuterContainer>
   ));
 
 ProjectSection.defaultProps = {
   content: [
     {
+      aside: true,
+      heading: false,
       sectionTitle: "Lorem",
       sectionSubTitle: "Dolor",
       sectionContent: "Ipsum",
