@@ -17,7 +17,7 @@ const HeadingText = styled.p`
 `;
 
 const HeadingPeriod = styled.span`
-  color: #ae0e0a;
+  ${(color) => (color ? color : "color: #fff")};
 `;
 
 const HeadingSubtext = styled.p`
@@ -45,25 +45,27 @@ const RegularText = styled.p`
   color: #ffffff;
 `;
 
-const asideType = (heading, sectionTitle) =>
+const asideType = (heading, color, sectionTitle) =>
   heading ? (
     <HeadingText>
       {sectionTitle}
-      <HeadingPeriod>.</HeadingPeriod>
+      <HeadingPeriod color={color}>.</HeadingPeriod>
     </HeadingText>
   ) : (
     <RegularText>{sectionTitle}</RegularText>
   );
 
-const ProjectAside = ({ heading, sectionTitle, sectionSubTitle }) => (
+const ProjectAside = ({ heading, dotColor, sectionTitle, sectionSubTitle }) => (
   <Container>
-    {asideType(heading, sectionTitle)}
+    {console.log("dotColor: ", dotColor)}
+    {asideType(heading, dotColor, sectionTitle)}
     <HeadingSubtext>{sectionSubTitle}</HeadingSubtext>
   </Container>
 );
 
 ProjectAside.defaultProps = {
   heading: false,
+  dotColor: "#fff",
   sectionTitle: "Default Title",
   sectionSubTitle: "Default Sub Title",
 };

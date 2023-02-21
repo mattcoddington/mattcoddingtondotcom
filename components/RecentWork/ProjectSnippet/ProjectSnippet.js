@@ -61,6 +61,11 @@ const Summary = styled.div`
   color: ${(props) => props.textColor};
 `;
 
+const ProjectButton = styled.span`
+  text-align: right;
+  font-weight: 500;
+`;
+
 const ProjectSnippet = ({
   backgroundColor,
   imgURL,
@@ -85,7 +90,7 @@ const ProjectSnippet = ({
         <HR hrColor={hrColor} />
         <SummaryContainer>
           <Summary textColor={textColor}>{projectDescription}</Summary>
-          <div>View Project Button!</div>
+          <ProjectButton>View Project</ProjectButton>
         </SummaryContainer>
       </ContentContainer>
     </Container>

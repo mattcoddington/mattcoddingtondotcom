@@ -32,6 +32,7 @@ const ImageWithCaption = styled.div`
 const content = [
   {
     aside: true,
+    dotColor: "#AE0E0A",
     sectionTitle: "Deal Driver",
     sectionSubTitle: "A lean web app for helping sales teams meet efficiently",
     sectionContent: (

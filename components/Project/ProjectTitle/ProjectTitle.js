@@ -11,7 +11,7 @@ const Container = styled.section`
 `;
 
 const ProjectTitle = ({ image }) => (
-  <Container image={`../../images/${image}`}>HI</Container>
+  <Container image={`../../images/${image}`} />
 );
 
 export default ProjectTitle;

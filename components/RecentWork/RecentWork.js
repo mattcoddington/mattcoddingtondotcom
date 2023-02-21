@@ -24,7 +24,10 @@ const projects = [
   {
     backgroundColor: "#032040",
     projectTitle: "Corsair LITE",
+    projectURL: "corsair-lite",
     projectRole: "Senior UX/UI Designer @ Rygen",
+    projectDescription:
+      "A fast, lightweight rating tool for new and existing users who are just interested in getting rates back fast. This app is designed to act as sort of a demo for the main Corsair TMS product.",
     imgURL: "project_corsair-lite_thumb.png",
     hrColor: "#143B66",
     textColor: "#6F8EB0",
