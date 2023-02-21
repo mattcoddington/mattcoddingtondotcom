@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import Link from "next/link";
+
 const Container = styled.div`
   display: flex;
   align-items: center;
@@ -25,11 +27,19 @@ const Dot = styled.img``;
 
 const Nav = ({ separated }) => (
   <Container separated={separated}>
-    <div>work</div>
+    <div>
+      <Link href="/#recentWork">work</Link>
+    </div>
     <Dot src="/images/nav-dot.svg" alt="dot" />
-    <div>contact</div>
+    <div>
+      <Link href="/#contactForm">contact</Link>
+    </div>
     <Dot src="/images/nav-dot.svg" alt="dot" />
-    <div>resume</div>
+    <div>
+      <Link href="/images/MC_Resume.pdf" target="resume">
+        resume
+      </Link>
+    </div>
   </Container>
 );
 

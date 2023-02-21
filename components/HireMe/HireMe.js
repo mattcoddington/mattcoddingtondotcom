@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import Link from "next/link";
+
 import Button from "../Button";
 
 const Container = styled.div`
@@ -29,7 +31,9 @@ const HireMe = () => (
   <Container>
     <InnerContainer>
       <Copy>I'm looking for a new gig, freelance or full time!</Copy>
-      <Button text="Hire me, why don't ya" primary />
+      <Link href="/#contactForm">
+        <Button text="Hire me, why don't ya" primary />
+      </Link>
     </InnerContainer>
   </Container>
 );

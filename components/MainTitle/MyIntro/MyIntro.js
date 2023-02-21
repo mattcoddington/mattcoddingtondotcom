@@ -60,7 +60,7 @@ const MyIntro = () => (
       <MyName>Matt Coddington</MyName>
       <Divider />
       <ElevatorPitch>
-        I'm a Senior UX/UI Designer with 12 years of experience making sweet
+        I'm a Senior UX/UI Designer with 16 years of experience making sweet
         apps for web and mobile
       </ElevatorPitch>
     </NamePitchContainer>

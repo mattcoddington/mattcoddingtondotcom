@@ -38,13 +38,13 @@ const projects = [
 ];
 
 const RecentWork = () => (
-  <>
+  <div id="recentWork">
     <SectionTitle>Recent Work</SectionTitle>
 
     {projects.map((items, idx) => (
       <ProjectSnippet key={idx} {...items} />
     ))}
-  </>
+  </div>
 );
 
 export default RecentWork;

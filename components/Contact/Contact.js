@@ -31,7 +31,7 @@ const FormHeadline = styled.h3`
 `;
 
 const Contact = () => (
-  <Container>
+  <Container id="contactForm">
     <FormContainer>
       <FormHeadline>Drop me a line</FormHeadline>
       <ContactInfo />
