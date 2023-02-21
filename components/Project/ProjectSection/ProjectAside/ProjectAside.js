@@ -57,7 +57,6 @@ const asideType = (heading, color, sectionTitle) =>
 
 const ProjectAside = ({ heading, dotColor, sectionTitle, sectionSubTitle }) => (
   <Container>
-    {console.log("dotColor: ", dotColor)}
     {asideType(heading, dotColor, sectionTitle)}
     <HeadingSubtext>{sectionSubTitle}</HeadingSubtext>
   </Container>

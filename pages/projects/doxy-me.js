@@ -71,19 +71,18 @@ const content = [
           practitioners to set up secure video conferencing with patients. When
           I joined the scope had grown to include clinics which would add a ton
           of complexity. New features would be needed such as:
-          <ul>
-            <li>Multiple healthcare professionals working together</li>
-            <li>
-              Allowing professionals to maintain independent practice while also
-              being a part of one or many clinics
-            </li>
-            <li>
-              Complication of personas including new buyers, tech, and admin
-              roles
-            </li>
-            <li>White labeling</li>
-          </ul>
         </p>
+        <ul>
+          <li>Multiple healthcare professionals working together</li>
+          <li>
+            Allowing professionals to maintain independent practice while also
+            being a part of one or many clinics
+          </li>
+          <li>
+            Complication of personas including new buyers, tech, and admin roles
+          </li>
+          <li>White labeling</li>
+        </ul>
         <p>
           First, I set out to tackle the problem of the app's information
           architecture.
@@ -112,24 +111,24 @@ const content = [
           Ultimately, the main problem with doxy.me's IA was that Clinic
           features, while they were being hastily developed and implemented, had
           largely invaded the space of individual user spaces.
-          <ul>
-            <li>
-              Clinic settings were placed at the same level as an individual
-              user's personal account settings, if that user happened to also be
-              the admin of a Clinic
-            </li>
-            <li>
-              Because the only "Clinic" section lived within the admin's
-              personal settings, there was no area for other employees to go to
-              see data that might be available to them such as contact
-              information for coworkers and patients
-            </li>
-            <li>
-              There was no simple way to see who else was working at your
-              clinic, forcing users into third party apps like Slack
-            </li>
-          </ul>
         </p>
+        <ul>
+          <li>
+            Clinic settings were placed at the same level as an individual
+            user's personal account settings, if that user happened to also be
+            the admin of a Clinic
+          </li>
+          <li>
+            Because the only "Clinic" section lived within the admin's personal
+            settings, there was no area for other employees to go to see data
+            that might be available to them such as contact information for
+            coworkers and patients
+          </li>
+          <li>
+            There was no simple way to see who else was working at your clinic,
+            forcing users into third party apps like Slack
+          </li>
+        </ul>
         <p>
           Untangling Clinic from individual accounts a bit helped solve a lot of
           these problems, in addition to issues with features and requests that
@@ -272,7 +271,7 @@ export default function DoxyMe() {
       </Head>
 
       <Header separated />
-      <Project image={`projects/doxy-me/project-title.svg`} content={content} />
+      <Project image={`projects/doxy-me/project-title.png`} content={content} />
 
       <Contact />
     </>

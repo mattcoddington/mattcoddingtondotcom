@@ -109,22 +109,19 @@ const content = [
           The core unit against which all significant action is taken in Deal
           Driver is, of course, a "deal". A "deal" or "sale" goes through
           several stages:
-          <ol>
-            <li>First, there is deal creation and initial work</li>
-            <li>
-              Next there may be one or two or many follow-up meetings which
-              generate "actions"
-            </li>
-            <li>
-              Actions must be completed before another follow-up can happen
-            </li>
-            <li>
-              Eventually a deal will close, whether successfully ("closed won")
-              or unsuccessfully ("closed lost")
-            </li>
-          </ol>
         </p>
-        <p></p>
+        <ol>
+          <li>First, there is deal creation and initial work</li>
+          <li>
+            Next there may be one or two or many follow-up meetings which
+            generate "actions"
+          </li>
+          <li>Actions must be completed before another follow-up can happen</li>
+          <li>
+            Eventually a deal will close, whether successfully ("closed won") or
+            unsuccessfully ("closed lost")
+          </li>
+        </ol>
       </div>
     ),
   },
@@ -184,27 +181,27 @@ const content = [
         <p>
           While this is a small app, there are a few different types of users
           engaging with it:
-          <ul>
-            <li>
-              <strong>Vice President, Sales</strong> - This will be the buyer of
-              the software and the least hands-on. This user will be able to log
-              in and check status of meetings and analytics but likely will not.
-              This person is only interested in results.
-            </li>
-            <li>
-              <strong>Sales Leader</strong> - The most engaged user of the
-              applications, the Sales Leader is the person primarily responsible
-              for keeping sales associates on task and ensuring productive
-              meetings.
-            </li>
-            <li>
-              <strong>Sales Associate</strong> - The base user, the sales
-              associte is the person actually running meetings and accomplishing
-              actions within the app. They need to fully buy in for the software
-              to add value to the business.
-            </li>
-          </ul>
         </p>
+        <ul>
+          <li>
+            <strong>Vice President, Sales</strong> - This will be the buyer of
+            the software and the least hands-on. This user will be able to log
+            in and check status of meetings and analytics but likely will not.
+            This person is only interested in results.
+          </li>
+          <li>
+            <strong>Sales Leader</strong> - The most engaged user of the
+            applications, the Sales Leader is the person primarily responsible
+            for keeping sales associates on task and ensuring productive
+            meetings.
+          </li>
+          <li>
+            <strong>Sales Associate</strong> - The base user, the sales associte
+            is the person actually running meetings and accomplishing actions
+            within the app. They need to fully buy in for the software to add
+            value to the business.
+          </li>
+        </ul>
       </div>
     ),
   },

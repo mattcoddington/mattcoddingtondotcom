@@ -102,23 +102,21 @@ const content = [
           the full Corsair TMS by returning rates quickly, it was important to
           reduce the needed input as much as product would allow.
         </p>
-        <p>
-          So I ended up with two versions of the input screen:
-          <ol>
-            <li>
-              First, the absolute bare minimum data required to return useful
-              rates. This is what users would see when initially landing on the
-              app.
-            </li>
-            <li>
-              The second screen would show after the user selected a rate they
-              liked. This screen includes more details required to get the
-              actual *exact* rate for the shipment. Ideally this rate wouldn't
-              be far off from the initial one, but since there's a chance it
-              could be, this additional information is needed.
-            </li>
-          </ol>
-        </p>
+        <p>So I ended up with two versions of the input screen:</p>
+        <ol>
+          <li>
+            First, the absolute bare minimum data required to return useful
+            rates. This is what users would see when initially landing on the
+            app.
+          </li>
+          <li>
+            The second screen would show after the user selected a rate they
+            liked. This screen includes more details required to get the actual
+            *exact* rate for the shipment. Ideally this rate wouldn't be far off
+            from the initial one, but since there's a chance it could be, this
+            additional information is needed.
+          </li>
+        </ol>
       </div>
     ),
   },

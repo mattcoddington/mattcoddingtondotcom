@@ -34,7 +34,6 @@ const ProjectSection = ({ content }) =>
   content.map((section, idx) => (
     <OuterContainer {...section} key={idx}>
       <Container>
-        {console.log("background: ", section.sectionBackground)}
         {section.aside && <ProjectAside heading={idx === 0} {...section} />}
         <ContentContainer>{section.sectionContent}</ContentContainer>
       </Container>
