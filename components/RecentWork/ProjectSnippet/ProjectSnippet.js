@@ -6,6 +6,7 @@ import Link from "next/link";
 const Container = styled.div`
   height: 488px;
   width: 80%;
+  max-width: 1200px;
   margin: auto;
   margin-bottom: 118px;
   display: flex;

@@ -4,8 +4,11 @@ import ProjectSnippet from "./ProjectSnippet";
 const projects = [
   {
     backgroundColor: "#0C1218",
-    projectTitle: "doxy.me Analytics",
+    projectTitle: "doxy.me Clinic & Analytics",
     projectRole: "Senior UX/UI Designer @ doxy.me",
+    projectURL: "doxy-me",
+    projectDescription:
+      "While I was at doxy.me, I pitched a redesign for re-organizing the Clinic portion of the app as well as ideas on integrating several new features, including Analytics.",
     imgURL: "project_doxy-me-analytics_thumb.png",
     hrColor: "#162331",
     textColor: "#72808E",
@@ -31,14 +34,6 @@ const projects = [
     imgURL: "project_corsair-lite_thumb.png",
     hrColor: "#143B66",
     textColor: "#6F8EB0",
-  },
-  {
-    backgroundColor: "#231728",
-    projectTitle: "FICON",
-    projectRole: "Senior UX/UI Designer @ Rygen",
-    imgURL: "project_ficon_thumb.png",
-    hrColor: "#3E2C46",
-    textColor: "#C9BFCD",
   },
 ];
 
