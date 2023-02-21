@@ -148,7 +148,7 @@ const content = [
     aside: false,
     sectionContent: (
       <ImageWithCaption>
-        <img src="../../images/projects/doxy-me/screen-clinic-settings.svg" />
+        <img src="../../images/projects/doxy-me/screen-clinic-settings.png" />
         <div>General settings for the new Clinic</div>
       </ImageWithCaption>
     ),
@@ -157,7 +157,7 @@ const content = [
     aside: false,
     sectionContent: (
       <ImageWithCaption>
-        <img src="../../images/projects/doxy-me/screen-clinic-rooms.svg" />
+        <img src="../../images/projects/doxy-me/screen-clinic-rooms.png" />
         <div>
           New "shared rooms" allow multiple providers access a shared pool of
           patients
@@ -169,7 +169,7 @@ const content = [
     aside: false,
     sectionContent: (
       <ImageWithCaption>
-        <img src="../../images/projects/doxy-me/screen-clinic-users.svg" />
+        <img src="../../images/projects/doxy-me/screen-clinic-users.png" />
         <div>
           Clinic users being in a separate section means multiple admins can
           manage users
@@ -181,7 +181,7 @@ const content = [
     aside: false,
     sectionContent: (
       <ImageWithCaption>
-        <img src="../../images/projects/doxy-me/screen-clinic-content.svg" />
+        <img src="../../images/projects/doxy-me/screen-clinic-content.png" />
         <div>
           The "Edit Waiting Room" button was no longer sufficient as more types
           of content were being added for clinics
@@ -215,7 +215,7 @@ const content = [
     aside: false,
     sectionContent: (
       <ImageWithCaption>
-        <img src="../../images/projects/doxy-me/screen-analytics-1.svg" />
+        <img src="../../images/projects/doxy-me/screen-analytics-1.png" />
         <div>The "initial phase" pitch for analytics</div>
       </ImageWithCaption>
     ),
@@ -241,7 +241,7 @@ const content = [
     aside: false,
     sectionContent: (
       <ImageWithCaption>
-        <img src="../../images/projects/doxy-me/screen-analytics-quality-1.svg" />
+        <img src="../../images/projects/doxy-me/screen-analytics-quality-1.png" />
         <div>
           Call quality hover gives overview call quality information at a glance
         </div>
@@ -252,7 +252,7 @@ const content = [
     aside: false,
     sectionContent: (
       <ImageWithCaption>
-        <img src="../../images/projects/doxy-me/screen-analytics-quality-2.svg" />
+        <img src="../../images/projects/doxy-me/screen-analytics-quality-2.png" />
         <div>
           If users want advanced details of call quality, doxy.me provides it
         </div>
