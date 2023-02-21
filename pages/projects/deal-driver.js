@@ -80,6 +80,26 @@ const content = [
   },
   {
     aside: true,
+    sectionTitle: "The Purpose of Deal Driver",
+    sectionSubTitle: "",
+    sectionContent: (
+      <div>
+        <p>
+          When most people think of sales software they think of a sales CRM -
+          Deal Driver is not that. It's much smaller and hyperfocused on meeting
+          productivity. The purpose of Deal Driver is to help sales associates
+          identify hangups in deals so they can tackle them with help of their
+          team so they can more quickly get deals up or out of their pipeline.
+        </p>
+        <p>
+          Deal Driver is a tool designed primarily to keep everyone in the sales
+          funnel focused on the same goal. And it all starts with deals.
+        </p>
+      </div>
+    ),
+  },
+  {
+    aside: true,
     sectionTitle: "The Lifecycle of the Deal",
     sectionSubTitle: "",
     sectionContent: (
@@ -123,6 +143,26 @@ const content = [
         <img src="../../images/projects/deal-driver/screen-competitors-risk.svg" />
         <div>Setting up a new deal</div>
       </ImageWithCaption>
+    ),
+  },
+  {
+    aside: true,
+    sectionTitle: "Ongoing Action & Accountability",
+    sectionSubTitle: "",
+    sectionContent: (
+      <div>
+        <p>
+          At several points through the life cycle of a deal there are going to
+          be a hunter of "actions" that the user must complete. These are
+          typically blockers holding a deal back and range from simple admin
+          tasks to winning over contacts.
+        </p>
+        <p>
+          Deal meetings help identify potential action items as well as allow
+          team members to provide feedback on how to close out languishing
+          items.
+        </p>
+      </div>
     ),
   },
   {
