@@ -6,10 +6,7 @@ const OuterContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  ${(section) =>
-    section && section.sectionBackground
-      ? section.sectionBackground
-      : `background-color: #0A0A0A;`}
+  background-color: #0a0a0a;
 `;
 
 const Container = styled.section`

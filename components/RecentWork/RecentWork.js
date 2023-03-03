@@ -1,5 +1,11 @@
+import styled from "styled-components";
+
 import SectionTitle from "../SectionTitle";
 import ProjectSnippet from "./ProjectSnippet";
+
+const Container = styled.div`
+  background-color: #0a0a0a;
+`;
 
 const projects = [
   {
@@ -38,13 +44,13 @@ const projects = [
 ];
 
 const RecentWork = () => (
-  <div id="recentWork">
+  <Container id="recentWork">
     <SectionTitle>Recent Work</SectionTitle>
 
     {projects.map((items, idx) => (
       <ProjectSnippet key={idx} {...items} />
     ))}
-  </div>
+  </Container>
 );
 
 export default RecentWork;
