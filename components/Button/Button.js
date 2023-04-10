@@ -4,6 +4,8 @@ const PrimaryButton = styled.button`
   display: block;
   border: none;
   padding: 18px;
+  color: #fff;
+  cursor: pointer;
   background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.044) 0%,
