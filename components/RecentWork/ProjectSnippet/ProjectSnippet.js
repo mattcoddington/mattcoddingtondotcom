@@ -65,6 +65,8 @@ const Summary = styled.div`
 const ProjectButton = styled.span`
   text-align: right;
   font-weight: 500;
+  color: #fff;
+  cursor: pointer;
 `;
 
 const ProjectSnippet = ({
