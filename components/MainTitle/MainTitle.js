@@ -7,8 +7,9 @@ const Container = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: url("/images/main-title-bg.svg"), #1e1345;
+  height: 900px;
+  width: 100%;
+  background: url("/images/main-title-bg.svg") repeat #1e1345;
 
   background-attachment: fixed;
   background-position: center;
