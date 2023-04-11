@@ -4,13 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Container = styled.div`
-  height: 488px;
+  min-height: 488px;
   width: 80%;
   max-width: 1200px;
   margin: auto;
   margin-bottom: 118px;
   display: flex;
   box-shadow: 0px 1px 24px rgba(0, 0, 0, 0.25);
+  @media (max-width: 1140px) {
+    width: 488px;
+    flex-direction: column;
+  }
 `;
 
 const ContentContainer = styled.div`
@@ -21,6 +25,9 @@ const ContentContainer = styled.div`
   background-color: ${(props) => props.backgroundColor};
   padding: 60px;
   box-shadow: inset 1px 0px 12px rgba(0, 0, 0, 0.2);
+  @media (min-width: 1140px) {
+    height: 488px;
+  }
 `;
 
 const ProjectTitle = styled.h3`
@@ -60,6 +67,7 @@ const SummaryContainer = styled.div`
 
 const Summary = styled.div`
   color: ${(props) => props.textColor};
+  padding-bottom: 32px;
 `;
 
 const ProjectButton = styled.span`

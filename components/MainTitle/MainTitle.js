@@ -15,6 +15,9 @@ const Container = styled.section`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @media (max-width: 760px) {
+    height: 600px;
+  }
 `;
 
 const MainTitle = () => (

@@ -20,7 +20,9 @@ const Container = styled.header`
 `;
 
 const Contents = styled.div`
-  width: 1432px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 48px 0 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;

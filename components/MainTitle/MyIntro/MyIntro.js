@@ -13,17 +13,30 @@ const HiThere = styled.div`
   line-height: 38px;
   color: #7e6cb2;
   width: 100%;
+  @media (max-width: 1250px) {
+    text-align: center;
+  }
+  @media (max-width: 760px) {
+    font-size: 24px;
+  }
 `;
 
 const NamePitchContainer = styled.div`
   width: 1108px;
   display: flex;
   align-items: center;
-  > * {
-    margin-right: 40px;
+  @media (min-width: 1250px) {
+    > * {
+      margin-right: 40px;
+    }
+    > :last-child {
+      margin-right: 0px;
+    }
   }
-  > :last-child {
-    margin-right: 0px;
+  @media (max-width: 1250px) {
+    width: auto;
+    margin: 0 48px 0 48px;
+    flex-direction: column;
   }
 `;
 
@@ -32,6 +45,14 @@ const Divider = styled.div`
   height: 0px;
   border: 1px solid #332e69;
   transform: rotate(90deg);
+  @media (max-width: 1250px) {
+    border: 0px;
+    height: 48px;
+    transform: rotate(-90deg);
+  }
+  @media (max-width: 760px) {
+    height: 32px;
+  }
 `;
 
 const MyName = styled.div`
@@ -42,6 +63,9 @@ const MyName = styled.div`
   font-size: 60px;
   line-height: 75px;
   color: #fff;
+  @media (max-width: 760px) {
+    font-size: 48px;
+  }
 `;
 
 const ElevatorPitch = styled.div`
@@ -51,6 +75,13 @@ const ElevatorPitch = styled.div`
   font-size: 24px;
   line-height: 28px;
   color: #c7baed;
+  @media (max-width: 1250px) {
+    max-width: 600px;
+    text-align: center;
+  }
+  @media (max-width: 760px) {
+    font-size: 18px;
+  }
 `;
 
 const MyIntro = () => (

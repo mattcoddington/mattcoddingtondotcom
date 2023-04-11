@@ -10,8 +10,8 @@ const Container = styled.div`
 `;
 
 const InnerContainer = styled.div`
-  width: 100%;
   height: 100%;
+  margin: 0 48px 0 48px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,6 +26,9 @@ const Copy = styled.p`
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
+  @media (max-width: 1250px) {
+    text-align: center;
+  }
 `;
 
 const HireMe = () => (
