@@ -15,6 +15,12 @@ const ImageContainer = styled.div`
   *:last-child {
     margin-right: 0px;
   }
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    * {
+      margin-right: 0px;
+    }
+  }
 `;
 
 const ImageWithCaption = styled.div`
@@ -29,6 +35,18 @@ const ImageWithCaption = styled.div`
   text-align: center;
   img {
     max-width: 1200px;
+  }
+  @media (max-width: 1300px) {
+    img {
+      width: 100%;
+    }
+  }
+`;
+
+const ImageUserFlow = styled.img`
+  padding: 0;
+  @media (max-width: 1300px) {
+    width: 100%;
   }
 `;
 
@@ -83,10 +101,7 @@ const content = [
     sectionBackground: `
     background-color: #fff`,
     sectionContent: (
-      <img
-        style={{ padding: 0 }}
-        src="../../images/projects/corsair-lite/user-flow.svg"
-      />
+      <ImageUserFlow src="../../images/projects/corsair-lite/user-flow.svg" />
     ),
   },
   {

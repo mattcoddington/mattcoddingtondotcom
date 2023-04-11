@@ -3,6 +3,12 @@ import styled from "styled-components";
 const Container = styled.aside`
   margin-right: 129px;
   max-width: 303px;
+  @media (max-width: 1000px) {
+    text-align: center;
+    max-width: 600px;
+    margin-right: 0px;
+    margin-bottom: 129px;
+  }
 `;
 
 const HeadingText = styled.p`
@@ -21,9 +27,8 @@ const HeadingPeriod = styled.span`
 `;
 
 const HeadingSubtext = styled.p`
-  padding: 0;
-  margin: 0;
-  margin-top: 32px;
+  padding-top: 32px;
+  margin: 0 auto;
   width: 270px;
   font-family: "Roboto";
   font-style: italic;

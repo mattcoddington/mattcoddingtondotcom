@@ -30,6 +30,18 @@ const ImageWithCaption = styled.div`
   img {
     max-width: 1200px;
   }
+  @media (max-width: 1300px) {
+    img {
+      width: 100%;
+    }
+  }
+`;
+
+const ImageSiteMap = styled.img`
+  padding: 0;
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
 `;
 
 const content = [
@@ -95,7 +107,7 @@ const content = [
     sectionBackground: `
     background-color: #F9FAFC`,
     sectionContent: (
-      <img
+      <ImageSiteMap
         style={{ padding: 0 }}
         src="../../images/projects/doxy-me/site-map.svg"
       />

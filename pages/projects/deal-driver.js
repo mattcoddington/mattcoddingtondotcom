@@ -15,6 +15,16 @@ const Personas = styled.div`
   img:last-child {
     margin-right: 0px;
   }
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    img {
+      margin-right: 0px;
+      margin-bottom: 24px;
+    }
+    img:last-child {
+      margin-bottom: 0px;
+    }
+  }
 `;
 
 const ImageWithCaption = styled.div`
@@ -27,6 +37,18 @@ const ImageWithCaption = styled.div`
   font-weight: 400;
   font-size: 16px;
   text-align: center;
+  @media (max-width: 1300px) {
+    img {
+      width: 100%;
+    }
+  }
+`;
+
+const ImageLogin = styled.img`
+  padding: 0;
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
 `;
 
 const content = [
@@ -73,10 +95,7 @@ const content = [
     sectionBackground: `
     background-image: url('../../images/projects/deal-driver/login-bg.png')`,
     sectionContent: (
-      <img
-        style={{ padding: 0 }}
-        src="../../images/projects/deal-driver/login-area.svg"
-      />
+      <ImageLogin src="../../images/projects/deal-driver/login-area.svg" />
     ),
   },
   {

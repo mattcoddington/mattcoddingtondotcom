@@ -7,7 +7,17 @@ const Container = styled.section`
   height: 820px;
   background: url(${(props) => props.image}),
     ${(props) => props.backgroundColor};
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  @media (max-width: 1500px) {
+    height: 600px;
+  }
+  @media (max-width: 1100px) {
+    height: 300px;
+  }
+  @media (max-width: 600px) {
+    height: 200px;
+  }
 `;
 
 const ProjectTitle = ({ backgroundColor, image }) => (
